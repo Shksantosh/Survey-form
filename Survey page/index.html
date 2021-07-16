@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey From</title>
+</head>
+<body>
+    <h1 id="title">Tell Me About Music</h1>
+    <p id="description">
+      This is a survey where you can tell us about the music you're inspired by.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Best Email"><br>
+
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+
+      <label id="guitar-type-label">Guitar Type:</label>
+      <select id="dropdown" name="guitars">
+        <option value="fender">Fender</option>
+        <option value="martin">Martin</option>
+        <option value="epiphone">Epiphone</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label id="additional-comments-label">Additional Comments:</label>
+      <textarea placeholder="Additional Comments"></textarea><br>
+
+      <div id="button-area">
+        <label id="gender-label">Gender:</label>
+        <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+        <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+        <input type="radio" class="radio-inline" name="gender" value="other"> Other
+      </div>
+      <div id="button-area">
+        <label id="guitar types">The Different Types of Guitar:</label>
+        <input type="checkbox" name="vehicle1" value="Acoustic guitar">Acoustic Guitar.<br>
+        <input type="checkbox" name="vehicle2" value="Electric guitar">Electric Guitar.<br>
+        <input type="checkbox" name="vehicle3" value="Bass guitar" checked>Bass Guitar.<br>
+      </div>
+
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
